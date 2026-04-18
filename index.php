@@ -15,9 +15,6 @@
 	<?php
 		// Get the application environment parameters from the Parameter Store.
 		include ('get-parameters.php');
-
-		// Display the server metadata information if the showServerInfo parameter is true.
-	
 	?>
 	<hr>
 	<div class="topnav">
@@ -76,7 +73,6 @@
 		</div>
 		<div>Weekdays: 6:00am - 6:00pm<br>Saturday: 7:00am - 7:00pm<br>Closed on Sundays</div>
 	</div>
-
 	<div id="Copyright" class="center">
 		<h5>&copy; 2020, Amazon Web Services, Inc. or its Affiliates. All rights reserved.</h5>
 	</div>
