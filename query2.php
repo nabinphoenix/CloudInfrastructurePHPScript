@@ -7,10 +7,19 @@
 </head>
 <body>
           <?php
+               ini_set('display_errors', 1);
+               error_reporting(E_ALL);
+               mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
                include 'get-parameters.php';
 
-               $conn = new mysqli($ep, $un, $pw, $db);
-               $_pick = $_POST['selection'];
+               try {
+                   $conn = new mysqli($ep, $un, $pw, $db);
+               } catch (Exception $e) {
+                   die("<br><br><h2 style='color:red'>Database Connection Error:</h2> <b>" . $e->getMessage() . "</b><br> Endpoint: $ep<br> Username: $un<br> Check your Parameter Store and Security Groups.");
+               }
+               
+               $_pick = $_POST['selection'] ?? '';
 
                switch ($_pick) {
                     case "Q1":

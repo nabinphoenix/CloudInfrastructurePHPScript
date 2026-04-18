@@ -1,5 +1,4 @@
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<title>UNDP Organization</title>
@@ -10,16 +9,14 @@
 
 	<div id="header" class="mainHeader">
 		<hr>
-		<div class="center">
-			<H1>UNDP Organization</H1>
-		</div>
+		<div class="center"><H1>UNDP Organization</H1></div>
 	</div>
 	<br>
 	<?php
-	// Get the application environment parameters from the Parameter Store.
-	include('get-parameters.php');
+		// Get the application environment parameters from the Parameter Store.
+		include ('get-parameters.php');
 
-	// Display the server metadata information if the showServerInfo parameter is true.
+		// Display the server metadata information if the showServerInfo parameter is true.
 	
 	?>
 	<hr>
@@ -32,17 +29,15 @@
 	<div id="mainContent">
 
 		<div id="mainPictures" class="center">
-
+			
 			<hr>
-			<p>Welcome to our data query site. You can get data from countries all over the world to use in your
-				research. </p>
+			<p>Welcome to our data query site. You can get data from countries all over the world to use in your research. </p>
 			<br>
 			<table>
 				<tr>
-					<td>
-						<div class="cursiveText">We provide data for a variety of areas including basic demographics and
-							development statistics.</div>
-
+				    <td>
+						<div class="cursiveText">We provide data for a variety of areas including basic demographics and development statistics.</div>
+						
 					</td>
 				</tr>
 			</table>
@@ -55,24 +50,15 @@
 		<div>
 			<h2>About Us</h2>
 		</div>
-		<table>
-			<tr>
-				<td>
-					<figure><img src="Zaireeda.jfif" height=auto width="400">
-						<figcaption>Zaireeda</figcaption>
-					</figure>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>Our site got started when Zaireeda found that she was frequently looking up data from a variety
-						of databases. <br>Zaireeda decided to start sharing some of this data with other social
-						researchers. </p>
-				</td>
-			</tr>
-		</table>
-		<hr>
-	</div>
+			<table>
+				<tr>
+						<td><figure><img src="Zaireeda.jfif" height=auto width="400"><figcaption>Zaireeda</figcaption></figure></td>
+				</tr>	
+					<tr><td><p>Our site got started when Zaireeda found that she was frequently looking up data from a variety of databases. <br>Zaireeda decided to start sharing some of this data with other social researchers. </p></td>
+				</tr>
+			</table>
+			<hr>
+		</div>
 
 	<div id="contactUs" align="center">
 		<hr>
@@ -84,9 +70,7 @@
 				<td><img src="Logo.png" height=auto width="120"></td>
 			</tr>
 		</table>
-		<div>
-			<p>123 Any Street<br>Any Town, USA<br></p>
-		</div>
+		<div><p>123 Any Street<br>Any Town, USA<br></p></div>
 		<div>
 			<h3>Hours</h3>
 		</div>
@@ -97,5 +81,4 @@
 		<h5>&copy; 2020, Amazon Web Services, Inc. or its Affiliates. All rights reserved.</h5>
 	</div>
 </body>
-
 </html>
