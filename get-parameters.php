@@ -19,10 +19,10 @@
         $values[$p['Name']] = $p['Value'];
     }
 
-    $ep = $values['/example/endpoint'] ?? '';
-    $un = $values['/example/username'] ?? 'admin';
-    $pw = $values['/example/password'] ?? 'YourPassword123!';
-    $db = $values['/example/database'] ?? 'countries';
+    $ep = trim($values['/example/endpoint'] ?? '');
+    $un = trim($values['/example/username'] ?? 'admin');
+    $pw = trim($values['/example/password'] ?? 'YourPassword123!');
+    $db = trim($values['/example/database'] ?? 'countries');
   }
   catch (Exception $e) {
     error_log("SSM Error: " . $e->getMessage());
