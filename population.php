@@ -1,6 +1,10 @@
 <a href="query.php">Pick another query</a>
  
  <?php
+        if (!isset($conn)) {
+             include 'get-parameters.php';
+             $conn = new mysqli($ep, $un, $pw, $db);
+        }
  
         //Query for the population data            
         $sql = "select name, population, populationurban from countrydata_final;";

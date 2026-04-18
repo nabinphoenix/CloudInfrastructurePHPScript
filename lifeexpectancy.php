@@ -1,6 +1,10 @@
 <a href="query.php">Pick another query</a>
  
  <?php
+        if (!isset($conn)) {
+             include 'get-parameters.php';
+             $conn = new mysqli($ep, $un, $pw, $db);
+        }
         //SQL to get birthrate and life expectancy    
         $sql = "select name, birthrate, lifeexpectancy from countrydata_final;";
         

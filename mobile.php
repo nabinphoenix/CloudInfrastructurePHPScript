@@ -1,6 +1,11 @@
  <a href="query.php">Pick another query</a>
  
  <?php
+        if (!isset($conn)) {
+             include 'get-parameters.php';
+             $conn = new mysqli($ep, $un, $pw, $db);
+        }
+        
         //Query to get the GDP
         $sql = "select name, mobilephones from countrydata_final;";
        

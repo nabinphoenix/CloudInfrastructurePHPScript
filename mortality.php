@@ -1,6 +1,10 @@
 <a href="query.php">Pick another query</a>
  
  <?php
+        if (!isset($conn)) {
+             include 'get-parameters.php';
+             $conn = new mysqli($ep, $un, $pw, $db);
+        }
  
         //Query for childhood mortality rate
         $sql = "select name, mortalityunder5 from countrydata_final;";

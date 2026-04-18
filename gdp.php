@@ -1,8 +1,13 @@
  <a href="query.php">Pick another query</a>
  
  <?php
+        if (!isset($conn)) {
+             include 'get-parameters.php';
+             $conn = new mysqli($ep, $un, $pw, $db);
+        }
+
         //Query to get the GDP
-        $sql = "select name, gdp from countrydata_final;";
+        $sql = "select name, GDP as gdp from countrydata_final;";
        
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
