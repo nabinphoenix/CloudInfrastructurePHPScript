@@ -1,0 +1,10 @@
+# Ignore large SDK files (we download these via wget)
+aws.phar
+
+# Ignore documentation and guides for GitHub push
+*.md
+New GUide.md
+
+# Ignore local system files
+.DS_Store
+Thumbs.db
