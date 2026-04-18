@@ -3,8 +3,11 @@ aws.phar
 
 # Ignore documentation and guides for GitHub push
 *.md
-New GUide.md
+New GUideee.md
 
 # Ignore local system files
 .DS_Store
 Thumbs.db
+
+# Ignore backup/original folders
+PHP_SC_1/
