@@ -21,7 +21,7 @@
 
     $ep = trim($values['/example/endpoint'] ?? '');
     $un = trim($values['/example/username'] ?? 'admin');
-    $pw = trim($values['/example/password'] ?? 'YourPassword123!');
+    $pw = trim($values['/example/password'] ?? 'CSVC-A3-G7@Group');
     $db = trim($values['/example/database'] ?? 'countries');
   }
   catch (Exception $e) {
